@@ -3,11 +3,28 @@ body {
     background: #F5F5F5;
 }
 
+#container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../img/men.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#triangle-topleft { 
+  width: 0; 
+  height: 0; 
+  border-top: 1000px solid gray; 
+  border-right: 1000px solid transparent;
+}
+
 #left{
     background-color: #908c8c;
     position: fixed;
     float: left;
-    width: 30%;
+    width: 25%;
     height: 100%;
 }
 #left h1, #right h1{
@@ -24,7 +41,7 @@ body {
 }
 #right{
     background-color: #f0f0f0;
-    width: 70%;
+    width: 75%;
     float: right;
     height: 100%;
 }
