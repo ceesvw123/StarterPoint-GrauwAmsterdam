@@ -1,4 +1,12 @@
 <?php
+/*
+
+***
+not used
+***
+
+
+
 include 'config.php';
 include 'database.php';
 include 'DBfunctions.php';
