@@ -77,6 +77,6 @@ if ($payment == 'mail'){
   include 'mail.php';
 }
 }else{
-  echo "je mandje is leeg";
+  echo "jij mandje is leeg";
 }
  ?>
