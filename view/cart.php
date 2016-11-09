@@ -27,9 +27,12 @@ if (isset($_SESSION['cart'])) {
 for ($i=0; $i < count($_SESSION['cart']); $i++) {
 
 ?>
-<form action="cart.php?cart=update" name="cart" method="post">
+<form action="?page=shoppingcart&cart=update" name="cart" method="post">
   <?php
 
+  // Image
+
+  echo '<img src=\'img/'.$allproducts[$i]['img'].'\'/>';
 
   // name
   echo "name: ".$_SESSION['cart'][$i]['name']."<br>";
@@ -53,7 +56,7 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
   ?>
   <input type="submit"  value="update">
 </form>
-<form action="cart.php?cart=remove" method="post">
+<form action="index.php?page=shoppingcart&cart=remove" method="post">
   <?php   echo "<input type=\"hidden\" value=\"$i\" name=\"number\">"; ?>
   <input type="submit" value="remove">
 </form>

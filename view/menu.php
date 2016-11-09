@@ -1,19 +1,19 @@
 <div id="left">
     <div class="winkelmand">
-        <i class="fa fa-shopping-basket" style="font-size: 4em;"></i>
+      <a href='#'><i class="fa fa-shopping-basket"></i></a>
     </div>
 
     <img src="img/grauw_logo.png">
     <img src="img/grauw_tekst.png">
 
     <ul>
-        <li><a href="#visie">Visie</a></li>
-        <li><a href="#producten">Producten</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#visie" class="hvr-underline-from-center">Visie</a></li>
+        <li><a href="#producten" class="hvr-underline-from-center">Producten</a></li>
+        <li><a href="#contact" class="hvr-underline-from-center">Contact</a></li>
     </ul>
 
     <div class="socialMedia">
-        <i class="fa fa-facebook"></i>
+        <i class="fa fa-facebook-square"></i>
         <i class="fa fa-instagram"></i>
     </div>
 </div>

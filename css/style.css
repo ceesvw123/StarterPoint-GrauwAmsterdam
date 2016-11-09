@@ -13,19 +13,20 @@ body {
   background-repeat: no-repeat;
 }
 
-#triangle-topleft { 
-  width: 0; 
-  height: 0; 
-  border-top: 1000px solid gray; 
+#triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 1000px solid gray;
   border-right: 1000px solid transparent;
 }
 
 #left{
-    background-color: #908c8c;
+    background-color: #ffffff;
     position: fixed;
     float: left;
     width: 25%;
     height: 100%;
+    text-align: center;
 }
 #left h1, #right h1{
     text-align: center;
@@ -258,25 +259,26 @@ body {
 }
 
 .winkelmand {
-    background-color: #908c8c;
+    background-color: #ffffff;
     height: 5em;
+    text-align: center;
 }
 
-.fa-shopping-cart {
-    float: right;
-    color: #fff;
-    margin-right: .2em;
-    margin-top: .1em;
+.fa-shopping-basket {
+    color: #BBBBBB;
+    margin-top: .8em;
+    font-size: 2em;
 }
 
 .socialMedia .fa {
     display: inline-block;
-    font-size: 3em;
+    font-size: 2em;
+    color: #BBBBBB;
 }
 .socialMedia {
     text-align: center;
     letter-spacing: 1em;
-    padding-top: 2.5em;
+    padding-top: 9em;
     padding-bottom: 1em;
 }
 
@@ -284,8 +286,9 @@ ul, li, a {
     list-style-type: none;
     text-decoration: none;
     font-size: 36px;
-    color: #fff;
-    padding-bottom: 1em;
+    color: black;
+    margin-bottom: 0.5em;
+    padding-left: 0px;
 }
 
 .contactTekst {
@@ -296,7 +299,7 @@ ul, li, a {
     font-size: 24px;
 }
 
-.form-style { 
+.form-style {
     width: 65%;
     padding: 30px;
     margin: 50px auto;
@@ -322,7 +325,7 @@ ul, li, a {
 .form-style input[type="url"],
 .form-style input[type="password"],
 .form-style textarea,
-.form-style select 
+.form-style select
 {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -342,7 +345,7 @@ ul, li, a {
     resize:none;
     overflow: hidden;
 }
-.form-style input[type="button"], 
+.form-style input[type="button"],
 .form-style input[type="submit"]{
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -358,7 +361,7 @@ ul, li, a {
     text-decoration: none;
     text-transform: uppercase;
 }
-.form-style input[type="button"]:hover, 
+.form-style input[type="button"]:hover,
 .form-style input[type="submit"]:hover {
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
@@ -373,7 +376,7 @@ ul, li, a {
         background-color: #f0f0f0;
         width: 100%;
     }
-    
+
     .header {
         display: none;
     }
@@ -384,7 +387,7 @@ ul, li, a {
         background-size: cover;
         height: 80vh;
     }
-    
+
     .headerMobile img {
         width: 55%;
         display: block;
@@ -392,12 +395,12 @@ ul, li, a {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .mandMobile {
         background-color: lightslategray;
         height: 5em;
     }
-    .fa-shopping-cart {
+    .fa-shopping-basket {
         position: fixed;
         float: left;
         color: #fff;
@@ -418,7 +421,7 @@ ul, li, a {
         text-align: justify;
         font-size: 22px;
     }
-    
+
 }
 
 @media screen and (min-width: 768px) {

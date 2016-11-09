@@ -12,8 +12,11 @@
     </div>
     <div class="visie">
 
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-            quis, sem.</p>
+        <p>Er is maar één schoonheid te vinden in de kleur zwart. GRAUW ziet de kracht in
+
+de glans van de zwarte pantervacht. GRAUW draait de hand niet om voor wat
+
+permanente inkt en gelooft in de duisterheid van Darth Vader.</p>
 
     </div>
     <!--            <div class="buttonPos">-->

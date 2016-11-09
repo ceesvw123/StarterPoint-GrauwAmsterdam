@@ -8,7 +8,7 @@ for ($i=0; $i < count($allproducts); $i++) {
   // Image
 
   echo '<img src=\'img/'.$allproducts[$i]['img'].'\'/>';
-
+  echo "<input type=\"hidden\" name=\"img\" value=\"". $allproducts[$i]['img']."\">" ;
 
   // name and description
   echo "name: ".$allproducts[$i]['name']."<br>";
