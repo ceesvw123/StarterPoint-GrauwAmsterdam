@@ -1,29 +1,23 @@
 <?php
-include 'payment.php';
-session_start();/*
-if (!isset($_SESSION["cart"])) {
-  $_SESSION["cart"] = [];
-}*/
-?>
-<a href="../index.html">return</a><br>
-<?php
+session_start();
+
 if (isset($_GET['cart'])) {
   switch ($_GET['cart']) {
     case 'addProduct':
       $_SESSION['cart'][count($_SESSION['cart'])] = $_POST;
-      header('location: cart.php');
+      header('location: index.php?page=shoppingcart');
       break;
 
     case 'update':
       $newPost = $_POST;
       unset($newPost['number']);
       $_SESSION['cart'][$_POST['number']] = $newPost;
-      header('location: cart.php');
+      header('location: index.php?page=shoppingcart');
       break;
 
     case 'remove':
       array_splice($_SESSION['cart'],$_POST['number'],1);
-      header('location: cart.php');
+      header('location: index.php?page=shoppingcart');
       break;
 
   }
@@ -35,12 +29,15 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
 ?>
 <form action="cart.php?cart=update" name="cart" method="post">
   <?php
+
+
+  // name
   echo "name: ".$_SESSION['cart'][$i]['name']."<br>";
   echo "<input type=\"hidden\" name=\"name\" value=\"". $_SESSION['cart'][$i]['name']."\">" ;
-  echo $_SESSION['cart'][$i]['description']."<br>";
-  echo "<input type=\"hidden\" name=\"description\" value=\"". $_SESSION['cart'][$i]['description']."\">";
-   ?>
 
+
+// size
+   ?>
   <select name="size" value>
      <option value="s" <?php if($_SESSION['cart'][$i]['size'] == 's'){echo "selected";}?>>s</option>
      <option value="m"<?php if($_SESSION['cart'][$i]['size'] == 'm'){echo "selected";}?>>m</option>
@@ -65,7 +62,7 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
 }
 
 
-// price
+// total price
 $totalprice = 0;
 for ($i=0; $i < count($_SESSION['cart']); $i++) {
   $totalprice += $_SESSION['cart'][$i]['price'] * $_SESSION['cart'][$i]['amount'];

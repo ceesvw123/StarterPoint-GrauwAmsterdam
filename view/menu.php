@@ -1,6 +1,6 @@
 <div id="left">
     <div class="winkelmand">
-        <i class="fa fa-shopping-cart" style="font-size: 4em;"></i>
+        <i class="fa fa-shopping-basket" style="font-size: 4em;"></i>
     </div>
 
     <img src="img/grauw_logo.png">

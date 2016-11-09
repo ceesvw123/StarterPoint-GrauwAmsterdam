@@ -11,9 +11,9 @@ setlocale(LC_ALL, 'nl_NL');
 
 // databasegegevens
 define('DB_HOST','127.0.0.1');
-define('DB_NAME','18900_mailTest');
-define('DB_USERNAME','mikeweer');
-define('DB_PASSWORD','dwljftab');
+define('DB_NAME','cart');
+define('DB_USERNAME','root');
+define('DB_PASSWORD','');
 
 
 

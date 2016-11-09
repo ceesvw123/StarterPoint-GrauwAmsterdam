@@ -1,13 +1,26 @@
 <?php
+// data base includes
+include 'models/config.php';
+include 'models/database.php';
+include 'models/DBfunctions.php';
+include 'models/mailFunctions.php';
+
+
+// view includes
  include 'view/head.php';
  include 'view/menu.php';
-
-switch ($_GET['page']) {
+if (isset($_GET['page'])) {
+  $page = $_GET['page'];
+}
+else {
+  $page = '';
+}
+switch ($page) {
   case 'home':
   include 'view/home.php';
     break;
 
-    case 'product':
+    case 'products':
       include 'view/product.php';
       break;
 
