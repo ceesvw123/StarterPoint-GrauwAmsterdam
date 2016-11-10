@@ -1,12 +1,3 @@
-
-        <<<<<<< HEAD
-            <div id="container">
-            <div id="triangle-topleft"></div>
-
-    </div>
-
-
-    ======= >>>>>>> origin/master
     <div class="header" id="visie">
         <img src="img/grauw_logo.png">
     </div>
@@ -19,9 +10,6 @@ de glans van de zwarte pantervacht. GRAUW draait de hand niet om voor wat
 permanente inkt en gelooft in de duisterheid van Darth Vader.</p>
 
     </div>
-    <!--            <div class="buttonPos">-->
-    <!--                <button class="">Lees Meer</button>-->
-    <!--            </div>-->
 
     <div class="producten" id="producten">
         <h1>Producten</h1>

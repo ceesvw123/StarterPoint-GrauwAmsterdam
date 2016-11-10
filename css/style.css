@@ -1,26 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-body {
+ body {
     background: #F5F5F5;
 }
+/* Menu left */
 
-#container {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-image: url(../img/men.jpg);
-  background-position: top right;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#triangle-topleft {
-  width: 0;
-  height: 0;
-  border-top: 1000px solid gray;
-  border-right: 1000px solid transparent;
-}
-
-#left{
+#left {
     background-color: #ffffff;
     position: fixed;
     float: left;
@@ -28,11 +12,11 @@ body {
     height: 100%;
     text-align: center;
 }
-#left h1, #right h1{
+#left h1,
+#right h1 {
     text-align: center;
     margin-top: 40px;
 }
-
 #left img {
     width: 50%;
     margin-top: 1em;
@@ -40,12 +24,17 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-#right{
+
+/* Menu right */
+
+#right {
     background-color: #f0f0f0;
     width: 75%;
     float: right;
     height: 100%;
 }
+
+/* Hamburger Menu Mobile */
 
 .container {
     position: absolute;
@@ -80,7 +69,9 @@ body {
     bottom: 0;
     transition: .35s ease;
 }
-.container a:hover:after, .container a:focus:after, .container a:active:after {
+.container a:hover:after,
+.container a:focus:after,
+.container a:active:after {
     width: 100%;
 }
 
@@ -107,7 +98,6 @@ body {
 }
 .button_container.active .bottom {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
-
 }
 .button_container span {
     background: #fff;
@@ -126,7 +116,6 @@ body {
 .button_container span:nth-of-type(3) {
     top: 22px;
 }
-
 .overlay {
     position: fixed;
     background: #000;
@@ -198,7 +187,9 @@ body {
     text-decoration: none;
     overflow: hidden;
 }
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
     width: 100%;
 }
 .overlay ul li a:after {
@@ -224,6 +215,9 @@ body {
     }
 }
 
+/* Hamburger Menu Mobile ^ */
+
+/* Visie Text & picture*/
 .visie {
     margin-top: 3em;
     margin-left: 3em;
@@ -233,7 +227,6 @@ body {
     padding-bottom: 20em;
     padding-top: 1em;
 }
-
 .header img {
     width: 30%;
     padding-top: 1em;
@@ -242,34 +235,31 @@ body {
     margin-right: auto;
 }
 
+/*Products & Pictures */
+
 .producten {
     text-align: center;
     padding-bottom: 20em;
     padding-top: 1em;
 }
-
 .producten img {
     width: 30%;
     padding: 0.2em;
     display: inline-block;
 }
 
-.contact {
-    padding-top: 1em;
-}
+/*Shopping Basket & icons */
 
 .winkelmand {
     background-color: #ffffff;
     height: 5em;
     text-align: center;
 }
-
 .fa-shopping-basket {
     color: #BBBBBB;
     margin-top: .8em;
     font-size: 2em;
 }
-
 .socialMedia .fa {
     display: inline-block;
     font-size: 2em;
@@ -281,8 +271,9 @@ body {
     padding-top: 9em;
     padding-bottom: 1em;
 }
-
-ul, li, a {
+ul,
+li,
+a {
     list-style-type: none;
     text-decoration: none;
     font-size: 36px;
@@ -290,6 +281,9 @@ ul, li, a {
     margin-bottom: 0.5em;
     padding-left: 0px;
 }
+
+/* Contact Text */
+
 
 .contactTekst {
     margin-top: 3em;
@@ -299,13 +293,14 @@ ul, li, a {
     font-size: 24px;
 }
 
+/* Contact Form Styling */
+
 .form-style {
     width: 65%;
     padding: 30px;
     margin: 50px auto;
-
 }
-.form-style h2{
+.form-style h2 {
     background: #4D4D4D;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -325,8 +320,7 @@ ul, li, a {
 .form-style input[type="url"],
 .form-style input[type="password"],
 .form-style textarea,
-.form-style select
-{
+.form-style select {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -341,12 +335,12 @@ ul, li, a {
     font: 16px Arial, Helvetica, sans-serif;
     height: 45px;
 }
-.form-style textarea{
-    resize:none;
+.form-style textarea {
+    resize: none;
     overflow: hidden;
 }
 .form-style input[type="button"],
-.form-style input[type="submit"]{
+.form-style input[type="submit"] {
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -363,20 +357,17 @@ ul, li, a {
 }
 .form-style input[type="button"]:hover,
 .form-style input[type="submit"]:hover {
-    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
-    background-color:#34CACA;
+    background: linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color: #34CACA;
 }
-
-
 @media screen and (max-width: 768px) {
-    #left{
+    #left {
         display: none;
     }
-    #right{
+    #right {
         background-color: #f0f0f0;
         width: 100%;
     }
-
     .header {
         display: none;
     }
@@ -387,7 +378,6 @@ ul, li, a {
         background-size: cover;
         height: 80vh;
     }
-
     .headerMobile img {
         width: 55%;
         display: block;
@@ -395,7 +385,6 @@ ul, li, a {
         margin-left: auto;
         margin-right: auto;
     }
-
     .mandMobile {
         background-color: lightslategray;
         height: 5em;
@@ -406,7 +395,7 @@ ul, li, a {
         color: #fff;
         margin-left: .2em;
         margin-top: .1em;
-}
+    }
     .producten img {
         width: 55%;
         margin-bottom: 3em;
@@ -421,11 +410,9 @@ ul, li, a {
         text-align: justify;
         font-size: 22px;
     }
-
 }
-
 @media screen and (min-width: 768px) {
-    #none{
+    #none {
         display: none;
     }
     .headerMobile {
