@@ -283,16 +283,19 @@ a {
 
 .contactTekst {
     margin-top: 3em;
-    margin-left: 3em;
     margin-right: 3em;
     text-align: justify;
-    font-size: 24px;
+    font-size: 28px;
+    float: right;
+    width: 39%;
+
 }
 
 /* Contact Form Styling */
 
 .form-style {
-    width: 65%;
+    width: 50%;
+    float:left;
     padding: 30px;
     margin: 50px auto;
 }

@@ -1,10 +1,41 @@
 .producten {
-    text-align: center;
+    width: 100%;
+    text-align: justify;
+    font-size: 24px;
     padding-bottom: 20em;
     padding-top: 1em;
 }
+
+.producten p, h2 {
+    padding: .5em;
+}
 .producten img {
-    width: 30%;
+    width: 100%;
     padding: 0.2em;
     display: inline-block;
+    padding: .3em;
+}
+
+.shirt {
+    width: 33%;
+    float: left;
+}
+
+.trui {
+    width: 33%;
+    float: left;
+}
+
+.jack {
+     width: 33%;
+    float: left;
+}
+
+.kledingButton {
+    padding: 5em;
+}
+
+.truiTekst {
+    height: 45vh;
+    padding-bottom: auto;
 }

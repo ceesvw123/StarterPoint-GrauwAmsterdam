@@ -3,8 +3,10 @@
 
     <div class="contactTekst">
         <p>Grauw</p>
-        <p>Contactweg 36</p>
-        <p>0618894141</p>
+        <p>Razende bol 5</p>
+        <p>1938 ZZ HEEMSKERK</p>
+        <p>info@grauw.amsterdam</p>
+        <p>0675467328</p>
     </div>
 
     <div class="form-style">
@@ -24,10 +26,6 @@
             }
         </script>
     </div>
-
-
-</div>
-
 
 </div>
 

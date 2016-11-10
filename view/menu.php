@@ -8,7 +8,7 @@
 
     <ul>
         <li><a href="#visie" class="hvr-underline-from-center">Visie</a></li>
-        <li><a href="#producten" class="hvr-underline-from-center">Producten</a></li>
+        <li><a href="#kleding" class="hvr-underline-from-center">Kleding</a></li>
         <li><a href="#contact" class="hvr-underline-from-center">Contact</a></li>
     </ul>
 
@@ -30,7 +30,7 @@
                 <ul>
                     <li><a href="#visie">Visie</a>
                     </li>
-                    <li><a href="#producten">Kleding</a>
+                    <li><a href="#kleding">Kleding</a>
                     </li>
                     <li><a href="#contact">Contact</a>
                     </li>
