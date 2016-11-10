@@ -1,0 +1,10 @@
+.producten {
+    text-align: center;
+    padding-bottom: 20em;
+    padding-top: 1em;
+}
+.producten img {
+    width: 30%;
+    padding: 0.2em;
+    display: inline-block;
+}

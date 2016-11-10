@@ -8,9 +8,8 @@
 de glans van de zwarte pantervacht. GRAUW draait de hand niet om voor wat
 
 permanente inkt en gelooft in de duisterheid van Darth Vader.</p>
-
     </div>
-
+    
     <div class="producten" id="producten">
         <h1>Producten</h1>
 
