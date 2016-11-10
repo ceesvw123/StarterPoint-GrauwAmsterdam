@@ -30,7 +30,7 @@
                 <ul>
                     <li><a href="#visie">Visie</a>
                     </li>
-                    <li><a href="#producten">Producten</a>
+                    <li><a href="#producten">Kleding</a>
                     </li>
                     <li><a href="#contact">Contact</a>
                     </li>

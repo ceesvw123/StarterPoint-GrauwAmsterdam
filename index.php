@@ -18,6 +18,8 @@ else {
 switch ($page) {
   case 'home':
   include 'view/home.php';
+  include 'view/kleding.php';
+  include 'view/contact.php';
     break;
 
     case 'products':
@@ -30,6 +32,8 @@ switch ($page) {
 
   default:
   include 'view/home.php';
+  include 'view/kleding.php';
+  include 'view/contact.php';
     break;
 }
 
