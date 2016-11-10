@@ -7,9 +7,30 @@
     <img src="img/grauw_tekst.png">
 
     <ul>
-        <li><a href="#visie" class="hvr-underline-from-center">Visie</a></li>
-        <li><a href="#producten" class="hvr-underline-from-center">Producten</a></li>
-        <li><a href="#contact" class="hvr-underline-from-center">Contact</a></li>
+      <?php
+      if (isset($_GET['page'])){
+       if ($_GET['page'] == 'home') {
+?>
+         <li><a href="#visie" class="hvr-underline-from-center">Visie</a></li>
+         <li><a href="#producten" class="hvr-underline-from-center">Producten</a></li>
+         <li><a href="#contact" class="hvr-underline-from-center">Contact</a></li>
+<?php
+      }else{
+        ?>
+        <li><a href="index.php?page=home#visie" class="hvr-underline-from-center">Visie</a></li>
+        <li><a href="index.php?page=home#producten" class="hvr-underline-from-center">Producten</a></li>
+        <li><a href="index.php?page=home#contact" class="hvr-underline-from-center">Contact</a></li>
+        <?php
+      }
+    }else{
+        ?>
+        <li><a href="index.php?page=home#visie" class="hvr-underline-from-center">Visie</a></li>
+        <li><a href="index.php?page=home#producten" class="hvr-underline-from-center">Producten</a></li>
+        <li><a href="index.php?page=home#contact" class="hvr-underline-from-center">Contact</a></li>
+        <?php
+      }
+       ?>
+
     </ul>
 
     <div class="socialMedia">
