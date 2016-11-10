@@ -220,24 +220,34 @@
 
 /* Visie Text & picture*/
 
-
-.header
+.headerPic{
+  width: 100%;
+  height: 40%;
+}
 .headerText h1{
+  position: absolute;
+  top: 0;
+  left: 45%;
+  background-color: white;
+  padding: 3px;
   font-size: 50px;
- background-color: white;
- width: 50%;
- margin: 0 auto;
-margin-top: -100px;
-position: absolute;
 }
 .visie{
-  width:80%;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+  padding: 3px
 }
-.headerPic{
-  height: 60%;
-  width: 100%;
+.headerButton{
+  position: relative;
+  left: 43%;
+    color: #000000;
+    font-size: 33px;
+    padding: 10px 20px 10px 20px;
+    border: solid #ff0000 2px;
+    text-decoration: none;
 }
-
 
 /*Products & Pictures */
 
