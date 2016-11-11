@@ -3,12 +3,32 @@
   text-align: center;
   font-size: 60px;
 }
-
+.cartItem{
+  margin-left: 1em;
+}
 .cartImg{
+  display: inline;
   width:200px;
   height: 200px;
+  vertical-align: middle;
 }
-.cartItem{
-  float: left;
-  margin-left: 1em;
+.cartName{
+  display: inline;
+  font-size: 25px;
+  margin-left: 2em;
+}
+.cartSize{
+  display: inline;
+  margin-left: 2em;
+  font-size: 25px;
+}
+.cartPrice{
+  display: inline;
+  font-size: 25px;
+  margin-left: 2em;
+}
+.cartAmount{
+  width: 30px;
+  font-size: 25px;
+  margin-left: 2em;
 }

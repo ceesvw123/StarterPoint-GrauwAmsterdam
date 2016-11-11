@@ -44,23 +44,22 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
     echo "<input type=\"hidden\" name=\"img\" value=\"". $_SESSION['cart'][$i]['img']."\">" ;
 
   // name
-  echo "<div class=\"\">GRAUW ".$_SESSION['cart'][$i]['name']."<br>";
+  echo "<div class=\"cartName\">GRAUW ".$_SESSION['cart'][$i]['name']."</div>";
   echo "<input type=\"hidden\" name=\"name\" value=\"". $_SESSION['cart'][$i]['name']."\">" ;
 
 
 // size
    ?>
-  <select name="size" value>
+  <select name="size" class="cartSize">
      <option value="s" <?php if($_SESSION['cart'][$i]['size'] == 's'){echo "selected";}?>>s</option>
      <option value="m"<?php if($_SESSION['cart'][$i]['size'] == 'm'){echo "selected";}?>>m</option>
      <option value="l"<?php if($_SESSION['cart'][$i]['size'] == 'l'){echo "selected";}?>>l</option>
      <option value="xl"<?php if($_SESSION['cart'][$i]['size'] == 'xl'){echo "selected";}?>>xl</option>
   </select>
-  <br>
   <?php
-  echo "price: ".$_SESSION['cart'][$i]['price']."<br>";
+  echo "<div class=\"cartPrice\">&#8364 ".$_SESSION['cart'][$i]['price']."</div>";
   echo "<input type=\"hidden\" name=\"price\" value=\"". $_SESSION['cart'][$i]['price']."\">";
-  echo "<input type=\"number\" name=\"amount\" min=\"1\" max=\"100\" value=\"".$_SESSION['cart'][$i]['amount']."\">";
+  echo "<input type=\"number\" name=\"amount\" min=\"1\" max=\"100\" class =\"cartAmount\" value=\"".$_SESSION['cart'][$i]['amount']."\">";
   echo "<input type=\"hidden\" value=\"$i\" name=\"number\">";
   ?>
   <input type="submit"  value="update">
@@ -70,7 +69,7 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
   <input type="submit" value="remove">
 </form>
 </div>
-<br>
+
 <?php
 }
 
@@ -80,7 +79,7 @@ $totalprice = 0;
 for ($i=0; $i < count($_SESSION['cart']); $i++) {
   $totalprice += $_SESSION['cart'][$i]['price'] * $_SESSION['cart'][$i]['amount'];
 }
-echo "totale prijs : ".$totalprice. " euro<br>";
+echo "totale prijs : ".$totalprice. " euro";
 
 //payment
 if ($payment == 'mail'){
