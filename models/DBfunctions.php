@@ -8,10 +8,9 @@ function getAll($db, $table){
   return $resultarray;
 }
 
-function GetOne($db,$table,$id){
+function GetOneById($db,$table,$id){
   $query = "SELECT * FROM ".$table." WHERE id = ".$id;
   $result = $db->query($query);
-  var_dump($db);
   while ($assoc = $result->fetch_assoc()) {
     $resultarray[] = $assoc;
   }

@@ -25,10 +25,16 @@ if (isset($_GET['mail'])) {
         'X-Mailer: PHP/' . phpversion();
 
       if (sendCostumerMail($informationArray,$mail_header)) {
+        if (sendAdminMail($informationArray,$mail_header)) {
+
+
         session_destroy();
         header('location: cart.php');
       }else {
         echo "bestelling is mislukt";
       }
+    }else {
+      echo "bestelling is mislukt";
+    }
    }
 }

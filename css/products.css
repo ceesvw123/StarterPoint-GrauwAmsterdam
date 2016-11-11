@@ -53,3 +53,15 @@
 .wrap {
     text-align: center;
 }
+
+.contactText {
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+.contactTekst {
+    padding-top: 3em;
+    font-size: 20px;
+}
