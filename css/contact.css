@@ -1,0 +1,55 @@
+.contact {
+    padding-top: 5em;
+}
+
+.contactTekst {
+    margin-top: -1em;
+    margin-right: 3em;
+    text-align: justify;
+    font-size: 28px;
+    float: right;
+    width: 30%;
+
+}
+
+.input-list {
+  display: block;
+  padding: 0 10px;
+  width: 50%;
+  float: left;
+}
+
+.style-4 input[type="text"], input[type="email"], input[type="onderwerp"], textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.style-4 input[type="text"]:focus, .style-4 input[type="text"].focus {
+  border-bottom: solid 2px red;
+}
+
+input[type="text"], input[type="email"], input[type="onderwerp"], textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+input[type="text"], input[type="email"], input[type="onderwerp"], textarea:focus {
+  outline: none;
+}

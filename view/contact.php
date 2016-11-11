@@ -1,5 +1,5 @@
 <div class="contact" id="contact">
-    <h1>Contact</h1>
+    <h1 style="margin-bottom: 2em;">Contact</h1>
 
     <div class="contactTekst">
         <p>Grauw</p>
@@ -9,13 +9,13 @@
         <p>0675467328</p>
     </div>
 
-    <div class="form-style">
+    <div class="input-list style-4 clearfix">
         <form action="models/form-contact.php" method="post">
             <input type="text" name="naam" placeholder="Naam" required><br>
             <input type="email" name="email" placeholder="E-mail" required><br>
             <input type="text" name="onderwerp" placeholder="Onderwerp" required><br>
             <textarea rows="5" name="bericht" placeholder="Bericht" onkeyup="adjust_textarea(this)" required></textarea><br>
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" class="buttonStyle" style="padding: .5em; padding-left: 1em; padding-right: 1em;">
         </form>
 
         <script type="text/javascript">
