@@ -32,7 +32,8 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
 
   // Image
 
-  echo '<img src=\'img/'.$allproducts[$i]['img'].'\'/>';
+  echo '<img src=\'img/'.$_SESSION['cart'][$i]['img'].'\'/>';
+    echo "<input type=\"hidden\" name=\"img\" value=\"". $_SESSION['cart'][$i]['img']."\">" ;
 
   // name
   echo "name: ".$_SESSION['cart'][$i]['name']."<br>";

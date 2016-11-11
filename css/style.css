@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
- body {
+body {
     background: #F5F5F5;
     overflow-x: hidden;
 }
+
+
 /* Menu left */
 
 #left {
@@ -13,11 +15,12 @@
     height: 100%;
     text-align: center;
 }
-#left h1,
-#right h1 {
+
+#left h1, #right h1 {
     text-align: center;
     margin-top: 40px;
 }
+
 #left img {
     width: 50%;
     margin-top: 1em;
@@ -25,6 +28,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* Menu right */
 
@@ -34,6 +38,7 @@
     float: right;
     height: 100%;
 }
+
 
 /* Hamburger Menu Mobile */
 
@@ -46,9 +51,11 @@
     margin: 0 auto;
     font-family: 'Varela Round', sans-serif;
 }
+
 .container p {
     font-size: 20px;
 }
+
 .container a {
     display: inline-block;
     position: relative;
@@ -59,6 +66,7 @@
     overflow: hidden;
     top: 5px;
 }
+
 .container a:after {
     content: '';
     position: absolute;
@@ -70,9 +78,8 @@
     bottom: 0;
     transition: .35s ease;
 }
-.container a:hover:after,
-.container a:focus:after,
-.container a:active:after {
+
+.container a:hover:after, .container a:focus:after, .container a:active:after {
     width: 100%;
 }
 
@@ -86,20 +93,25 @@
     z-index: 100;
     transition: opacity .25s ease;
 }
+
 .button_container:hover {
     opacity: .7;
 }
+
 .button_container.active .top {
     transform: translateY(11px) translateX(0) rotate(45deg);
     background: #FFF;
 }
+
 .button_container.active .middle {
     opacity: 0;
     background: #FFF;
 }
+
 .button_container.active .bottom {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
 }
+
 .button_container span {
     background: #fff;
     border: none;
@@ -111,12 +123,15 @@
     transition: all .35s ease;
     cursor: pointer;
 }
+
 .button_container span:nth-of-type(2) {
     top: 11px;
 }
+
 .button_container span:nth-of-type(3) {
     top: 22px;
 }
+
 .overlay {
     position: fixed;
     background: #000;
@@ -129,6 +144,7 @@
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
 }
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -137,24 +153,30 @@
     display: block;
     transition: 0.3s;
 }
+
 .overlay.open {
     opacity: .9;
     visibility: visible;
     height: 100%;
 }
+
 .overlay.open li {
     animation: fadeInRight .5s ease forwards;
     animation-delay: .35s;
 }
+
 .overlay.open li:nth-of-type(2) {
     animation-delay: .4s;
 }
+
 .overlay.open li:nth-of-type(3) {
     animation-delay: .45s;
 }
+
 .overlay.open li:nth-of-type(4) {
     animation-delay: .50s;
 }
+
 .overlay nav {
     position: relative;
     height: 70%;
@@ -165,6 +187,7 @@
     font-weight: 400;
     text-align: center;
 }
+
 .overlay ul {
     list-style: none;
     padding: 0;
@@ -173,6 +196,7 @@
     position: relative;
     height: 100%;
 }
+
 .overlay ul li {
     display: block;
     height: 25%;
@@ -181,6 +205,7 @@
     position: relative;
     opacity: 0;
 }
+
 .overlay ul li a {
     display: block;
     position: relative;
@@ -188,11 +213,11 @@
     text-decoration: none;
     overflow: hidden;
 }
-.overlay ul li a:hover:after,
-.overlay ul li a:focus:after,
-.overlay ul li a:active:after {
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
     width: 100%;
 }
+
 .overlay ul li a:after {
     content: '';
     position: absolute;
@@ -216,32 +241,37 @@
     }
 }
 
+
 /* Hamburger Menu Mobile ^ */
+
 
 /* Visie Text & picture*/
 
-.headerPic{
-  width: 100%;
-  height: 40%;
+.headerPic {
+    width: 100%;
+    height: 40%;
 }
-.headerText h1{
-  position: absolute;
-  top: 0;
-  left: 45%;
-  background-color: white;
-  padding: 3px;
-  font-size: 50px;
+
+.headerText h1 {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    background-color: white;
+    padding: 3px;
+    font-size: 50px;
 }
-.visie{
-  font-size: 18px;
-  margin: 0 auto;
-  width: 80%;
-  text-align: justify;
-  padding: 3px
+
+.visie {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: justify;
+    padding: 3px
 }
-.headerButton{
-  position: relative;
-  left: 43%;
+
+.headerButton {
+    position: relative;
+    left: 43%;
     color: #000000;
     font-size: 33px;
     padding: 10px 20px 10px 20px;
@@ -249,13 +279,11 @@
     text-decoration: none;
 }
 
-/*Products & Pictures */
-
-
-
 
 /*Products & Pictures */
 
+
+/*Products & Pictures */
 
 
 /*Shopping Basket & icons */
@@ -265,25 +293,27 @@
     height: 5em;
     text-align: center;
 }
+
 .fa-shopping-basket {
     color: #BBBBBB;
     margin-top: .8em;
     font-size: 2em;
 }
+
 .socialMedia .fa {
     display: inline-block;
     font-size: 2em;
     color: #BBBBBB;
 }
+
 .socialMedia {
     text-align: center;
     letter-spacing: 1em;
     padding-top: 9em;
     padding-bottom: 1em;
 }
-ul,
-li,
-a {
+
+ul, li, a {
     list-style-type: none;
     text-decoration: none;
     font-size: 36px;
@@ -292,8 +322,8 @@ a {
     padding-left: 0px;
 }
 
-/* Contact Text */
 
+/* Contact Text */
 
 .contactTekst {
     margin-top: 3em;
@@ -302,17 +332,18 @@ a {
     font-size: 28px;
     float: right;
     width: 39%;
-
 }
+
 
 /* Contact Form Styling */
 
 .form-style {
     width: 50%;
-    float:left;
+    float: left;
     padding: 30px;
     margin: 50px auto;
 }
+
 .form-style h2 {
     background: #4D4D4D;
     text-transform: uppercase;
@@ -323,17 +354,8 @@ a {
     padding: 20px;
     margin: -30px -30px 30px -30px;
 }
-.form-style input[type="text"],
-.form-style input[type="date"],
-.form-style input[type="datetime"],
-.form-style input[type="email"],
-.form-style input[type="number"],
-.form-style input[type="search"],
-.form-style input[type="time"],
-.form-style input[type="url"],
-.form-style input[type="password"],
-.form-style textarea,
-.form-style select {
+
+.form-style input[type="text"], .form-style input[type="date"], .form-style input[type="datetime"], .form-style input[type="email"], .form-style input[type="number"], .form-style input[type="search"], .form-style input[type="time"], .form-style input[type="url"], .form-style input[type="password"], .form-style textarea, .form-style select {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -348,12 +370,13 @@ a {
     font: 16px Arial, Helvetica, sans-serif;
     height: 45px;
 }
+
 .form-style textarea {
     resize: none;
     overflow: hidden;
 }
-.form-style input[type="button"],
-.form-style input[type="submit"] {
+
+.form-style input[type="button"], .form-style input[type="submit"] {
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -368,11 +391,12 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
-.form-style input[type="button"]:hover,
-.form-style input[type="submit"]:hover {
+
+.form-style input[type="button"]:hover, .form-style input[type="submit"]:hover {
     background: linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color: #34CACA;
 }
+
 @media screen and (max-width: 768px) {
     #left {
         display: none;
@@ -424,6 +448,7 @@ a {
         font-size: 22px;
     }
 }
+
 @media screen and (min-width: 768px) {
     #none {
         display: none;
@@ -434,4 +459,61 @@ a {
     .mandMobile {
         display: none;
     }
+}
+
+
+/* producten pagina */
+
+.productPageTitle {
+    font-size: 80px;
+    text-align: center;
+}
+
+.productPageImg {
+    height: 20em;
+    width: 30em;
+    overflow: hidden;
+    float: left;
+    padding: 0 10px;
+}
+.productPagePrice{
+  font-size: 20px;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label{
+  text-align: center;
+  margin: 0 10px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: grey;
+}
+input[type="radio"]:checked + label{
+background-color: red;
+}
+
+.productPageAmount{
+  display: none;
+}
+.productPageButton{
+      margin-top: 1.4em;
+      color: #000000;
+      font-size: 33px;
+      padding: 10px 20px 10px 20px;
+      border: solid #ff0000 2px;
+      text-decoration: none;
+
+}
+.productPageSmallImg{
+  padding: 0 0.75em;
+  margin-top: 2em;
+  width: 9em;
+  height: 100px;
+  display: inline-block;
 }
