@@ -22,21 +22,29 @@ if (isset($_GET['cart'])) {
 
   }
 }
+?>
+
+<div class="cartTitle">
+  winkelwagen
+</div>
+
+<?php
 //showing cart
 if (isset($_SESSION['cart'])) {
 for ($i=0; $i < count($_SESSION['cart']); $i++) {
 
 ?>
+<div class="cartItem">
 <form action="?page=shoppingcart&cart=update" name="cart" method="post">
   <?php
 
   // Image
 
-  echo '<img src=\'img/'.$_SESSION['cart'][$i]['img'].'\'/>';
+  echo '<img src=\'img/'.$_SESSION['cart'][$i]['img'].'\' class=\'cartImg\'/>';
     echo "<input type=\"hidden\" name=\"img\" value=\"". $_SESSION['cart'][$i]['img']."\">" ;
 
   // name
-  echo "name: ".$_SESSION['cart'][$i]['name']."<br>";
+  echo "<div class=\"\">GRAUW ".$_SESSION['cart'][$i]['name']."<br>";
   echo "<input type=\"hidden\" name=\"name\" value=\"". $_SESSION['cart'][$i]['name']."\">" ;
 
 
@@ -61,6 +69,7 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
   <?php   echo "<input type=\"hidden\" value=\"$i\" name=\"number\">"; ?>
   <input type="submit" value="remove">
 </form>
+</div>
 <br>
 <?php
 }
@@ -75,7 +84,7 @@ echo "totale prijs : ".$totalprice. " euro<br>";
 
 //payment
 if ($payment == 'mail'){
-  include 'mail.php';
+  //include 'mail.php';
 }
 }else{
   echo "jij mandje is leeg";

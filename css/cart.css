@@ -1,0 +1,14 @@
+/* shopping cart page */
+.cartTitle{
+  text-align: center;
+  font-size: 60px;
+}
+
+.cartImg{
+  width:200px;
+  height: 200px;
+}
+.cartItem{
+  float: left;
+  margin-left: 1em;
+}
