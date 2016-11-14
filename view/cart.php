@@ -35,6 +35,7 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
 
 ?>
 <div class="cartItem">
+  <div class="cartItemLeft">
 <form action="?page=shoppingcart&cart=update" name="cart" method="post">
   <?php
 
@@ -62,11 +63,15 @@ for ($i=0; $i < count($_SESSION['cart']); $i++) {
   echo "<input type=\"number\" name=\"amount\" min=\"1\" max=\"100\" class =\"cartAmount\" value=\"".$_SESSION['cart'][$i]['amount']."\">";
   echo "<input type=\"hidden\" value=\"$i\" name=\"number\">";
   ?>
-  <input type="submit"  value="update">
+
+  <input type="submit" name="update" class="cartUpdateInput" id="update">
+  <label for="update" class="cartUpdateLabel"> <i class="fa fa-refresh" aria-hidden="true"></i></i></label>
 </form>
+</div>
 <form action="index.php?page=shoppingcart&cart=remove" method="post">
   <?php   echo "<input type=\"hidden\" value=\"$i\" name=\"number\">"; ?>
-  <input type="submit" value="remove">
+  <input type="submit" name="remove" class="cartRemoveInput" id="remove">
+  <label for="remove" class="cartRemoveLabel">  <i class="fa fa-times" aria-hidden="true"></i></label>
 </form>
 </div>
 

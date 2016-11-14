@@ -6,6 +6,9 @@
 .cartItem{
   margin-left: 1em;
 }
+.cartItemLeft{
+  float: left;
+}
 .cartImg{
   display: inline;
   width:200px;
@@ -28,7 +31,14 @@
   margin-left: 2em;
 }
 .cartAmount{
+  display: inline;
   width: 30px;
   font-size: 25px;
   margin-left: 2em;
+}
+.cartRemoveInput, .cartUpdateInput {
+ display: none;
+}
+.cartRemoveLabel{
+  display: inline;
 }
